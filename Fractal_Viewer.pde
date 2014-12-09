@@ -162,4 +162,10 @@ void draw() {
       Yloc+=ycalc;
     }
   }
+  if (keyPressed) {
+    if (key == ' ') {
+      Canvas.save("images/" + modes[select] +
+      "_x" + int(1000*Xloc) + "_y" + int(1000*Yloc) + ".png");
+    }
+  }
 }
